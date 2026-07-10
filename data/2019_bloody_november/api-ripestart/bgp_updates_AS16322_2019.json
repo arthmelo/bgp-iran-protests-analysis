@@ -1,0 +1,278 @@
+{
+    "messages": [],
+    "see_also": [],
+    "version": "1.5",
+    "data_call_name": "bgp-update-activity",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260710184529-70b4a586-e6d0-4f87-9086-b7177d8d5814",
+    "process_time": 256,
+    "server_id": "app178",
+    "build_version": "v0.10.13-2026.07.09",
+    "pipeline": "1335896",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-07-10T18:45:30.237953",
+    "data": {
+        "max_samples": 50,
+        "query_endtime": "2019-11-27T12:00:00",
+        "query_starttime": "2019-11-15T00:00:00",
+        "related_prefixes": [],
+        "resource": "16322",
+        "resource_type": "asn",
+        "sampling_period": 21600.0,
+        "sampling_period_human": "6 hours",
+        "updates": [
+            {
+                "announcements": 3557,
+                "withdrawals": null,
+                "starttime": "2019-11-15T00:00:00"
+            },
+            {
+                "announcements": 74800,
+                "withdrawals": null,
+                "starttime": "2019-11-15T06:00:00"
+            },
+            {
+                "announcements": 3376,
+                "withdrawals": null,
+                "starttime": "2019-11-15T12:00:00"
+            },
+            {
+                "announcements": 4518,
+                "withdrawals": null,
+                "starttime": "2019-11-15T18:00:00"
+            },
+            {
+                "announcements": 46973,
+                "withdrawals": null,
+                "starttime": "2019-11-16T00:00:00"
+            },
+            {
+                "announcements": 4127,
+                "withdrawals": null,
+                "starttime": "2019-11-16T06:00:00"
+            },
+            {
+                "announcements": 77016,
+                "withdrawals": null,
+                "starttime": "2019-11-16T12:00:00"
+            },
+            {
+                "announcements": 93374,
+                "withdrawals": null,
+                "starttime": "2019-11-16T18:00:00"
+            },
+            {
+                "announcements": 59947,
+                "withdrawals": null,
+                "starttime": "2019-11-17T00:00:00"
+            },
+            {
+                "announcements": 126163,
+                "withdrawals": null,
+                "starttime": "2019-11-17T06:00:00"
+            },
+            {
+                "announcements": 98515,
+                "withdrawals": null,
+                "starttime": "2019-11-17T12:00:00"
+            },
+            {
+                "announcements": 187444,
+                "withdrawals": null,
+                "starttime": "2019-11-17T18:00:00"
+            },
+            {
+                "announcements": 215868,
+                "withdrawals": null,
+                "starttime": "2019-11-18T00:00:00"
+            },
+            {
+                "announcements": 41992,
+                "withdrawals": null,
+                "starttime": "2019-11-18T06:00:00"
+            },
+            {
+                "announcements": 11019,
+                "withdrawals": null,
+                "starttime": "2019-11-18T12:00:00"
+            },
+            {
+                "announcements": 17707,
+                "withdrawals": null,
+                "starttime": "2019-11-18T18:00:00"
+            },
+            {
+                "announcements": 6369,
+                "withdrawals": null,
+                "starttime": "2019-11-19T00:00:00"
+            },
+            {
+                "announcements": 44332,
+                "withdrawals": null,
+                "starttime": "2019-11-19T06:00:00"
+            },
+            {
+                "announcements": 7016,
+                "withdrawals": null,
+                "starttime": "2019-11-19T12:00:00"
+            },
+            {
+                "announcements": 78388,
+                "withdrawals": null,
+                "starttime": "2019-11-19T18:00:00"
+            },
+            {
+                "announcements": 176224,
+                "withdrawals": null,
+                "starttime": "2019-11-20T00:00:00"
+            },
+            {
+                "announcements": 77242,
+                "withdrawals": null,
+                "starttime": "2019-11-20T06:00:00"
+            },
+            {
+                "announcements": 40371,
+                "withdrawals": null,
+                "starttime": "2019-11-20T12:00:00"
+            },
+            {
+                "announcements": 80014,
+                "withdrawals": null,
+                "starttime": "2019-11-20T18:00:00"
+            },
+            {
+                "announcements": 74856,
+                "withdrawals": null,
+                "starttime": "2019-11-21T00:00:00"
+            },
+            {
+                "announcements": 3732,
+                "withdrawals": null,
+                "starttime": "2019-11-21T06:00:00"
+            },
+            {
+                "announcements": 104706,
+                "withdrawals": null,
+                "starttime": "2019-11-21T12:00:00"
+            },
+            {
+                "announcements": 50913,
+                "withdrawals": null,
+                "starttime": "2019-11-21T18:00:00"
+            },
+            {
+                "announcements": 6887,
+                "withdrawals": null,
+                "starttime": "2019-11-22T00:00:00"
+            },
+            {
+                "announcements": 2492,
+                "withdrawals": null,
+                "starttime": "2019-11-22T06:00:00"
+            },
+            {
+                "announcements": 2189,
+                "withdrawals": null,
+                "starttime": "2019-11-22T12:00:00"
+            },
+            {
+                "announcements": 3926,
+                "withdrawals": null,
+                "starttime": "2019-11-22T18:00:00"
+            },
+            {
+                "announcements": 51370,
+                "withdrawals": null,
+                "starttime": "2019-11-23T00:00:00"
+            },
+            {
+                "announcements": 3464,
+                "withdrawals": null,
+                "starttime": "2019-11-23T06:00:00"
+            },
+            {
+                "announcements": 39381,
+                "withdrawals": null,
+                "starttime": "2019-11-23T12:00:00"
+            },
+            {
+                "announcements": 30719,
+                "withdrawals": null,
+                "starttime": "2019-11-23T18:00:00"
+            },
+            {
+                "announcements": 3155,
+                "withdrawals": null,
+                "starttime": "2019-11-24T00:00:00"
+            },
+            {
+                "announcements": 66133,
+                "withdrawals": null,
+                "starttime": "2019-11-24T06:00:00"
+            },
+            {
+                "announcements": 3579,
+                "withdrawals": null,
+                "starttime": "2019-11-24T12:00:00"
+            },
+            {
+                "announcements": 4936,
+                "withdrawals": null,
+                "starttime": "2019-11-24T18:00:00"
+            },
+            {
+                "announcements": 6960,
+                "withdrawals": null,
+                "starttime": "2019-11-25T00:00:00"
+            },
+            {
+                "announcements": 112806,
+                "withdrawals": null,
+                "starttime": "2019-11-25T06:00:00"
+            },
+            {
+                "announcements": 88133,
+                "withdrawals": null,
+                "starttime": "2019-11-25T12:00:00"
+            },
+            {
+                "announcements": 55702,
+                "withdrawals": null,
+                "starttime": "2019-11-25T18:00:00"
+            },
+            {
+                "announcements": 5494,
+                "withdrawals": null,
+                "starttime": "2019-11-26T00:00:00"
+            },
+            {
+                "announcements": 2765,
+                "withdrawals": null,
+                "starttime": "2019-11-26T06:00:00"
+            },
+            {
+                "announcements": 135122,
+                "withdrawals": null,
+                "starttime": "2019-11-26T12:00:00"
+            },
+            {
+                "announcements": 84974,
+                "withdrawals": null,
+                "starttime": "2019-11-26T18:00:00"
+            },
+            {
+                "announcements": 142296,
+                "withdrawals": null,
+                "starttime": "2019-11-27T00:00:00"
+            },
+            {
+                "announcements": 199020,
+                "withdrawals": null,
+                "starttime": "2019-11-27T06:00:00"
+            }
+        ]
+    }
+}

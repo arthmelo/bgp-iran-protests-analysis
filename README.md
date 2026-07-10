@@ -18,24 +18,21 @@ O estudo foca nos 5 principais Sistemas Autônomos (ASes) do Irã:
 
 ---
 
-## Fontes e Coleta de Dados
+## Fontes, Metodologia e Coleta de Dados
 
-Para comprovar a tática de censura e contornar a "cegueira" técnica do protocolo BGP (onde pacotes de retirada de rota não carregam a origem do AS), o projeto cruzou dados do plano de controle com o plano de dados através de três fontes distintas:
+Para comprovar as diferentes táticas de censura, o projeto cruzou dados do plano de controle com o plano de dados através de três fontes distintas. Devido à disponibilidade histórica e limitações de protocolo, a metodologia foi adaptada para cada evento:
 
 ### 1. IODA (Internet Outage Detection and Analysis)
-* **O que medimos:** O contraste entre a visibilidade do BGP e o acesso real à rede.
-* **Sinais extraídos:** * *BGP Reachability:* Visibilidade das rotas no mapa global.
-    * *Active Probing:* Pacotes (pings) enviados de fora do Irã para dentro.
-    * *Network Telescope:* Ruído de fundo não solicitado (tráfego saindo do Irã).
-* **Como foi coletado:** Exportação manual de dados históricos em formato `.csv` (intervalos de 15 minutos) diretamente do [Dashboard oficial do IODA](https://ioda.inetintel.cc.gatech.edu/), filtrando tanto a nível nacional (por ASN) quanto a nível regional (ex: província de Kordestan).
+* **2019 (Apagão Nacional):** Utilizamos a métrica nacional de tráfego do **Google (Search)**, que ilustra a queda abrupta da conectividade do país a níveis próximos a zero (0.06%) durante os dias de bloqueio de força bruta.
+* **2022 (Censura Cirúrgica):** Utilizamos uma abordagem multidimensional cruzando *BGP Reachability*, *Active Probing* e *Network Telescope*, tanto a nível de operadoras (ASNs) quanto a nível regional (Província de Kordestan). Isso comprovou a tática de filtragem de pacotes, onde o BGP permaneceu estável enquanto o tráfego real (Probing/Telescope) caiu.
 
 ### 2. RIPE RIS (via API RIPEstat)
-* **O que medimos:** Instabilidade das rotas (Route Flapping) e atividade anômala no plano de controle.
-* **Sinais extraídos:** Volume de atualizações BGP, com foco específico nos picos de *Announcements*.
-* **Como foi coletado:** Extração automatizada via scripts em Python consumindo o endpoint `bgp-update-activity` da API pública do RIPEstat. Os dados foram salvos em formato `.json`.
+* **O que medimos:** Instabilidade das rotas e atividade anômala no plano de controle BGP.
+* **Nota Metodológica:** Constatamos que pacotes de retirada de rota (*withdrawals*) no BGP não carregam o atributo *AS_PATH*. Portanto, coletores globais não conseguem associar *withdrawals* à origem em tempo real. Para contornar isso, mensuramos a instabilidade através do volume anômalo de **Announcements** (*route flapping*).
+* **Como foi coletado:** Extração automatizada via API consumindo o endpoint `bgp-update-activity`, salvos em formato `.json`.
 
-### 3. Cloudflare Radar
-* **O que medimos:** O impacto real na camada de aplicação e a confirmação de autoria.
-* **Sinais extraídos:** Séries temporais de *Netflows* (volume de bytes processados pela CDN).
-* **Como foi coletado:** Arquivos `.json` contendo não apenas as métricas de tráfego, mas metadados e anotações técnicas oficiais do Cloudflare que classificam os eventos explicitamente como disrupções direcionadas pelo governo (*"cause: government directed"*).
+### 3. Cloudflare Radar (Apenas 2022)
+* **Nota Metodológica:** Utilizado exclusivamente para 2022, pois a plataforma iniciou sua telemetria pública após o evento de 2019.
+* **O que medimos:** Impacto real na camada de aplicação via séries temporais de *Netflows*. 
+* **Evidência de Autoria:** Os arquivos extraídos contêm metadados e anotações técnicas oficiais do Cloudflare que classificam os eventos explicitamente como disrupções governamentais (*"cause: government directed"*).
 
