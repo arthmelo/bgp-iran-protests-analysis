@@ -1,0 +1,103 @@
+{
+    "messages": [],
+    "see_also": [],
+    "version": "1.5",
+    "data_call_name": "bgp-update-activity",
+    "data_call_status": "supported",
+    "cached": false,
+    "query_id": "20260710160333-70e067dc-51cd-4a76-9b3b-1b0545683f45",
+    "process_time": 320,
+    "server_id": "app166",
+    "build_version": "v0.10.13-2026.07.09",
+    "pipeline": "1335896",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2026-07-10T16:03:33.769219",
+    "data": {
+        "max_samples": 50,
+        "query_endtime": "2022-09-30T00:00:00",
+        "query_starttime": "2022-09-15T00:00:00",
+        "related_prefixes": [],
+        "resource": "58224",
+        "resource_type": "asn",
+        "sampling_period": 86400.0,
+        "sampling_period_human": "1 day",
+        "updates": [
+            {
+                "announcements": 999967,
+                "withdrawals": null,
+                "starttime": "2022-09-15T00:00:00"
+            },
+            {
+                "announcements": 1744244,
+                "withdrawals": null,
+                "starttime": "2022-09-16T00:00:00"
+            },
+            {
+                "announcements": 490169,
+                "withdrawals": null,
+                "starttime": "2022-09-17T00:00:00"
+            },
+            {
+                "announcements": 928753,
+                "withdrawals": null,
+                "starttime": "2022-09-18T00:00:00"
+            },
+            {
+                "announcements": 1479269,
+                "withdrawals": null,
+                "starttime": "2022-09-19T00:00:00"
+            },
+            {
+                "announcements": 5013473,
+                "withdrawals": null,
+                "starttime": "2022-09-20T00:00:00"
+            },
+            {
+                "announcements": 1451321,
+                "withdrawals": null,
+                "starttime": "2022-09-21T00:00:00"
+            },
+            {
+                "announcements": 1546564,
+                "withdrawals": null,
+                "starttime": "2022-09-22T00:00:00"
+            },
+            {
+                "announcements": 2935934,
+                "withdrawals": null,
+                "starttime": "2022-09-23T00:00:00"
+            },
+            {
+                "announcements": 1400856,
+                "withdrawals": null,
+                "starttime": "2022-09-24T00:00:00"
+            },
+            {
+                "announcements": 670778,
+                "withdrawals": null,
+                "starttime": "2022-09-25T00:00:00"
+            },
+            {
+                "announcements": 1068861,
+                "withdrawals": null,
+                "starttime": "2022-09-26T00:00:00"
+            },
+            {
+                "announcements": 1198211,
+                "withdrawals": null,
+                "starttime": "2022-09-27T00:00:00"
+            },
+            {
+                "announcements": 4255675,
+                "withdrawals": null,
+                "starttime": "2022-09-28T00:00:00"
+            },
+            {
+                "announcements": 2476345,
+                "withdrawals": null,
+                "starttime": "2022-09-29T00:00:00"
+            }
+        ]
+    }
+}
